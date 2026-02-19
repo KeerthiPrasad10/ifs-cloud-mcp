@@ -1,0 +1,29 @@
+{
+  "name": "@resolve/ifs-cloud-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for IFS Cloud work order management via OData REST API",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "ifs-cloud-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
